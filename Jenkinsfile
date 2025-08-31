@@ -17,7 +17,7 @@ pipeline {
             steps { echo 'Deploying to AWS EC2 staging server' }
         }
         stage('Integration Tests on Staging') {
-            steps { echo 'Running Selenium and Postman tests on staging' }
+            steps { echo 'Running Postman tests on staging' }
         }
         stage('Deploy to Production') {
             steps { echo 'Deploying to AWS EC2 production server' }
